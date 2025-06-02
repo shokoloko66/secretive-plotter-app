@@ -2,106 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My APK Store</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-    }
-
-    header {
-      background-color: #6a0dad;
-      color: white;
-      padding: 15px 20px;
-      text-align: center;
-      font-size: 24px;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 0 20px;
-    }
-
-    .apk-card {
-      background-color: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .apk-card h2 {
-      margin: 0 0 10px;
-      font-size: 20px;
-    }
-
-    .apk-card p {
-      color: #555;
-    }
-
-    .apk-buttons {
-      margin-top: 15px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      color: white;
-      margin-right: 10px;
-      font-size: 14px;
-    }
-
-    .btn-free {
-      background-color: #34a853;
-    }
-
-    .btn-premium {
-      background-color: #fbbc05;
-    }
-
-    footer {
-      text-align: center;
-      color: #999;
-      padding: 20px;
-      font-size: 14px;
-    }
-  </style>
+  <title>APK Vault</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-  My APK Store
-</header>
-
-<div class="container">
-
-  <div class="apk-card">
-    <h2>Sample Free App v1.0</h2>
-    <p>This is a free app available to all users.</p>
-    <div class="apk-buttons">
-      <a href="free.html" class="download-button">Free Apps</a>
+  <header class="main-header">
+    <div class="logo">APKVault</div>
+    <nav class="nav-links">
+      <a href="#">All Developers</a>
+      <a href="#">All Categories</a>
+      <a href="#">FAQ</a>
+      <a href="#">Contact</a>
+      <a href="#">Premium</a>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
     </div>
-  </div>
+  </header>
 
-  <div class="apk-card">
-    <h2>Premium App Pro v2.1</h2>
-    <p>Unlock this premium version by supporting me on Gumroad.</p>
-    <div class="apk-buttons">
-      <a href="https://gumroad.com/YOUR_GUMROAD_LINK" class="btn btn-premium">Buy Now</a>
-    </div>
-  </div>
+  <main class="main-layout">
+    <!-- Left Content: App List -->
+    <section class="app-list">
+      <h2>June 2</h2>
+      <a href="sample-app.html" class="app-item">
+        <img src="sample-icon.png" alt="App Icon">
+        <div class="app-info">
+          <h3>Sample App 1</h3>
+          <p>v1.0.0 by DevStudio</p>
+        </div>
+      </a>
 
-</div>
+      <a href="sample-app.html" class="app-item">
+        <img src="sample-icon.png" alt="App Icon">
+        <div class="app-info">
+          <h3>WhatsApp Messenger</h3>
+          <p>v2.25.18.5 beta by WhatsApp LLC</p>
+        </div>
+      </a>
 
-<footer>
-  &copy; 2025 My APK Store. All rights reserved.
-</footer>
+      <!-- More apps here -->
+    </section>
+
+    <!-- Right Sidebar -->
+    <aside class="sidebar">
+      <h3>Popular In Last 30 Days</h3>
+      <ul>
+        <li>Google Play Store 45.9.19</li>
+        <li>Google Play Store 46.1.37</li>
+        <li>Google Play Store 46.3.21</li>
+        <li>Google Play services 24.28.35</li>
+        <li>Lineage OS Phone 23.0</li>
+      </ul>
+    </aside>
+  </main>
 
 </body>
 </html>
