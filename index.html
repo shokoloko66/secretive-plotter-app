@@ -1,18 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My APK Vault</title>
+  <meta charset="UTF-8">
+  <title>My APK Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #1a73e8;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .apk-card {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .apk-card h2 {
+      margin: 0 0 10px;
+      font-size: 20px;
+    }
+
+    .apk-card p {
+      color: #555;
+    }
+
+    .apk-buttons {
+      margin-top: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      color: white;
+      margin-right: 10px;
+      font-size: 14px;
+    }
+
+    .btn-free {
+      background-color: #34a853;
+    }
+
+    .btn-premium {
+      background-color: #fbbc05;
+    }
+
+    footer {
+      text-align: center;
+      color: #999;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to My APK Site</h1>
-  <p>Free & Premium APKs Below</p>
 
-  <h2>Free Downloads</h2>
-  <ul>
-    <li><a href="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID">Cool App v1.0</a></li>
-  </ul>
+<header>
+  My APK Store
+</header>
 
-  <h2>Premium Downloads</h2>
-  <p>Support me on <a href="https://gumroad.com/YOUR_PROFILE">Gumroad</a> to unlock more!</p>
+<div class="container">
+
+  <div class="apk-card">
+    <h2>Sample Free App v1.0</h2>
+    <p>This is a free app available to all users.</p>
+    <div class="apk-buttons">
+      <a href="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID" class="btn btn-free">Download Free</a>
+    </div>
+  </div>
+
+  <div class="apk-card">
+    <h2>Premium App Pro v2.1</h2>
+    <p>Unlock this premium version by supporting me on Gumroad.</p>
+    <div class="apk-buttons">
+      <a href="https://gumroad.com/YOUR_GUMROAD_LINK" class="btn btn-premium">Buy Now</a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2025 My APK Store. All rights reserved.
+</footer>
+
 </body>
 </html>
